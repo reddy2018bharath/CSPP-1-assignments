@@ -2,7 +2,7 @@
 
 def main():
         """string"""
-    str_= input()
+    str_ = input()
     coun_= 0
     for char in str_:
         if char in ('a','e','i','o','u'):
