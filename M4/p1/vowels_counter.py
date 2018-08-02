@@ -5,12 +5,12 @@
 #Number of vowels: 5
 
 def main():
-    str=input()
-    coun=0
+    str = input()
+    coun_= 0
     for char in str:
         if char in ('a','e','i','o','u'):
-            coun=coun+1
-    print(coun)
+            coun_=coun_+ 1
+    print(coun_)
 
 if __name__== "__main__":
 	main()
