@@ -1,4 +1,4 @@
-"""string""" 
+ """string""" 
 def main():
     """string"""
     str_ = input()
