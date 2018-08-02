@@ -4,8 +4,8 @@ def main():
         """string"""
     str_= input()
     coun_= 0
-    for char in str_:
-        if char in ('a','e','i','o','u'):
+    for char_ in str_:
+        if char_ in ('a','e','i','o','u'):
             coun_=coun_+ 1
     print(coun_)
 
