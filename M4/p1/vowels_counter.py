@@ -6,5 +6,5 @@ def main():
         if char in ('a', 'e', 'i', 'o', 'u'):
             coun_ = coun_ + 1
     print(coun_)
- if __name__ == "__main__":
+if __name__ == "__main__":
 	main()
