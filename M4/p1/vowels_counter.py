@@ -1,5 +1,6 @@
 """To find number of vowels in a string""" 
 def main():
+    """string"""
     str_ = input()
     coun_ = 0
     for char in str_:
