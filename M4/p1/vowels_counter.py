@@ -1,4 +1,4 @@
-"""To find number of vowels in a string""" 
+"""string""" 
 def main():
     """string"""
     str_ = input()
