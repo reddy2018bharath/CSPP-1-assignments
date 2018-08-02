@@ -1,6 +1,6 @@
 """string""" 
 
-def=main():
+def main():
         """string"""
     str_= input()
     coun_= 0
