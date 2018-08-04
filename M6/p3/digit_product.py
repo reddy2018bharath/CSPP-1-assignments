@@ -8,7 +8,7 @@ def main():
     '''
     Read any number from the input, store it in variable int_input.
     '''
-    int_input = int(input("enter a number: "))
+    int_input = int(input())
     a=int_input
     c=1
     while a>0:
