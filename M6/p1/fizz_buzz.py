@@ -11,12 +11,12 @@ def main():
     num = int(input())
     for i in range(1,num+1):
         if i%15==0:
-            print("fizz")
-            print("buzz")
+            print("Fizz")
+            print("Buzz")
         elif i%3==0:
             print("fizz")
         elif i%5==0:
-            print("buzz")
+            print("Buzz")
         else:
             print(i)
 
