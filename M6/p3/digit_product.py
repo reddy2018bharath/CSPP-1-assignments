@@ -10,7 +10,7 @@ def main():
     '''
     int_input = int(input())
     ans = int_input
-    cou=1
+    cou = 1
     if ans > 0:
         while ans > 0:
             bat = ans%10
@@ -25,7 +25,7 @@ def main():
             ans = ans//10
         print(-cou)
     elif ans == 0:
-        fou= 0
+        fou = 0
         print(fou)
 if __name__ == "__main__":
     main()
