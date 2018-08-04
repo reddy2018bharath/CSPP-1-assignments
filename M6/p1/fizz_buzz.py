@@ -13,11 +13,11 @@ def main():
         if i%3==0 and i%5==0:
             print("fizz")
             print("buzz")
-        if i%3==0:
+        elif i%3==0:
             print("fizz")
-        if i%5==0:
+        elif i%5==0:
             print("buzz")
-        if (i%3)!=0 and (i%5)!=0:
+        else:
             print(i)
 
 if __name__ == "__main__":
