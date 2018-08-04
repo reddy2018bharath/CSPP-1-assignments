@@ -9,20 +9,20 @@ def main():
     Read any number from the input, store it in variable int_input.
     '''
     int_input = int(input())
-    a=int_input
+    a = int_input
     c=1
     if a>0:
         while a>0:
-            b=a%10
-            c=c*b
-            a=a//10
+            b = a%10
+            c = c*b
+            a = a//10
         print(c)
     elif a<0:
-        a=-a
+        a = -a
         while a>0:
-            b=a%10
-            c=c*b
-            a=a//10
+            b = a%10
+            c = c*b
+            a = a//10
         print(-c)
     
     
