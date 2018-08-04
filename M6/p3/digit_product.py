@@ -10,16 +10,16 @@ def main():
     '''
     int_input = int(input())
     ans = int_input
-    cou=1
-    if ans>0:
-        while ans>0:
+    cou = 1
+    if ans > 0:
+        while ans > 0:
             bat = ans%10
             cou = cou*bat
             ans = ans//10
         print(cou)
-    elif ans<0:
+    elif ans < 0:
         ans = -ans
-        while ans>0:
+        while ans > 0:
             bat = ans%10
             cou = cou*bat
             ans = ans//10
