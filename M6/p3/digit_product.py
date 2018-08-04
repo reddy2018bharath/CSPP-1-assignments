@@ -24,9 +24,8 @@ def main():
             cou = cou*bat
             ans = ans//10
         print(-cou)
-    elif ans==0:
-        f=0
-        print(f)
-        
+    elif ans == 0:
+        fou= 0
+        print(fou)
 if __name__ == "__main__":
     main()
