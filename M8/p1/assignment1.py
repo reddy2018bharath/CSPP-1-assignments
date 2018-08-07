@@ -2,7 +2,7 @@
 """This function takes in one number and returns one number."""
 def factorial(n_2):
     """factorial of n"""
-    if n_2 == 1:
+    if n_2 <= 1:
         return 1
     return n_2*factorial(n_2 - 1)
 def main():
