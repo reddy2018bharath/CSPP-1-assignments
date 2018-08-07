@@ -16,8 +16,9 @@ def sumofdigits(n_1):
 def main():
     "to find sum of digits of a given no"
     a_1 = input()
-    print(sumofdigits(int(a_1)))  
+    print(sumofdigits(int(a_1)))
 
 if __name__ == "__main__":
     main()
+
 
