@@ -37,15 +37,15 @@ def create_social_network(data):
     input_1 = data.split('\n')
     value_ = {}
     real_1 = []
-    for a in input_1:
-        # to split 
-        i_1 = a.split('follows')
-        for c, value in enumerate(i_1):
-            i_1[c] = value.replace(" ", "")
+    for a_1 in input_1:
+        # to split
+        i_1 = a_1.split('follows')
+        for c_1, value in enumerate(i_1):
+            i_1[c_1] = value.replace(" ", "")
         real_1.append(i_1)
-    for b in real_1:
-        if b[0] != "":
-            value_[b[0]] = b[1].split(",")
+    for b_1 in real_1:
+        if b_1[0] != "":
+            value_[b_1[0]] = b_1[1].split(",")
     return value_
 
 
