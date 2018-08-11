@@ -8,11 +8,16 @@ def biggest(aDict):
 
     returns: The key with the largest number of values associated with it
     '''
-    max=0
+    max = 0
+    y = []
     for i in aDict:
-        b=len(aDict[i])
+        b = len(aDict[i])
         if b>max:
-            max=b
+            max = b
+    for i in aDict:
+        if len(aDict[i]) == max:
+            y += i
+    return y
     
         
         

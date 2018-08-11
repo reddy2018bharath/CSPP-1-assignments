@@ -7,9 +7,9 @@ def main():
     guess = 0
     while abs(guess**2-num_1) >= epsilon:
         guess += step
-    if abs(guess**2-num_1) >= epsilon:
+    """if abs(guess**2-num_1) >= epsilon:
         print("Failed on square root of", num_1)
-    else:
-        print(guess)
+    else:"""
+    print(guess)
 if __name__ == "__main__":
     main()
