@@ -26,7 +26,7 @@ def isValidWord(word, hand, wordList):
         return True
     else:
         return False"""
-    return bool(word not in wordList)
+    return bool(word in wordList)
 
 
 def main():
