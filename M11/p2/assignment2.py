@@ -23,7 +23,7 @@ def updateHand(hand, word):
     for i in word:
         if i in a_1:
             a_1[i]=a_1[i]-1
-        return a_1
+            return a_1
 
 def main():
 	n=input()
