@@ -21,10 +21,11 @@ def isValidWord(word, hand, wordList):
     # TO DO ... <-- Remove this comment when you code this function
     for i in word:
         if i not in hand:
-            return false
+            return False
+        elif word in wordList:
+            return True
         else:
-            if word in wordList:
-                return true
+            return False
 
 
 def main():
