@@ -22,11 +22,11 @@ def isValidWord(word, hand, wordList):
     for i in word:
         if i not in hand:
             return False
-    """if word in wordList:
+    if word in wordList:
         return True
     else:
-        return False"""
-    return word in wordList
+        return False
+    
 
 
 def main():
