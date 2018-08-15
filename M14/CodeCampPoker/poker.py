@@ -85,8 +85,6 @@ def hand_rank(hand):
     # By now you should have seen the way a card is represented.
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
-    dict_1={2:1,3:2,4:3,5:4,6:5,7:6,8:7,9:8,T:9,J:10,Q:11,K:12,A:13}
-    len(hand)=5
     if is_flush(hand) and is_straight(hand):
         return 3
     if is_flush(hand):
