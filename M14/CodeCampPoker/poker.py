@@ -208,10 +208,8 @@ def hand_rank(hand):
     # If you haven't then go the main or poker function and print the hands
     # Each card is coded as a 2 character string. Example Kind of Hearts is KH
     if is_flush(hand) and is_straight(hand):
-        return 9
-    if is_fourkind(hand):
         return 8
-    if is_fullhouse(hand):
+    if is_fourkind(hand):
         return 7
     if is_fullhouse(hand):
         return 6
