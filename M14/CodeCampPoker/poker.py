@@ -70,6 +70,7 @@ def is_flush(hand):
     else:
         return False
 def is_onepair(hand):
+    dict1={'A':14, 'K':13, 'Q':12, 'J':11,'T':10}
     b=[]
     for i in hand:
         #print (i)
@@ -90,6 +91,7 @@ def is_onepair(hand):
     else:
         return False
 def is_fourkind(hand):
+    dict1={'A':14, 'K':13, 'Q':12, 'J':11,'T':10}
     b=[]
     for i in hand:
         #print (i)
@@ -110,6 +112,7 @@ def is_fourkind(hand):
     else:
         return False
 def is_fullhouse(hand):
+    dict1={'A':14, 'K':13, 'Q':12, 'J':11,'T':10}
     b=[]
     for i in hand:
         #print (i)
