@@ -89,7 +89,7 @@ def hand_rank(hand):
         return 3
     if is_flush(hand):
         return 2
-    if is_stright(hand):
+    if is_straight(hand):
         return 1
     return 0
     
