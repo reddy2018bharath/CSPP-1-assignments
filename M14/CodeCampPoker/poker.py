@@ -125,6 +125,7 @@ def is_fullhouse(hand):
         b.append(a)
     #print(b)
     c=0
+    d=0
     for i in b:
         if b.count(i)==3:
             c=1
