@@ -14,32 +14,31 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    dict1={'A':14, 'K':13, 'Q':12, 'J':11,'T':10}
-    b=[]
+    dict1 = {'A':14, 'K':13, 'Q':12, 'J':11, 'T':10}
+    b_1 = []
     for i in hand:
         #print (i)
-        a=i[0]
+        a_1 = i[0]
         #print(a)
-        if a in dict1.keys():
-            a=dict1[a]
+        if a_1 in dict1.keys():
+            a_1 = dict1[a_1]
         #print (a)
-        a=int(a)
-        b.append(a)
+        a_1 = int(a_1)
+        b_1.append(a_1)
     #print(b)
-    b.sort()
+    b_1.sort()
     #print (b)
-    d=max(b)
+    d_1 = max(b_1)
     #print (d)
-    e=min(b)
+    e_1 = min(b_1)
     #print (e)
-    f=d-e
+    f_1 = d_1 - e_1
     #print (f)
-    g=len(b)
+    g_1 = len(b_1)
     #print (g)
-    if f==4 and g==5:
+    if f_1 == 4 and g_1 == 5:
         return True
-    else:
-        return False
+    return False
 
 def is_flush(hand):
     '''
@@ -50,25 +49,25 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    dict1={'A':14, 'K':13, 'Q':12, 'J':11,'T':10}
-    b=[]
+    dict1 = {'A':14, 'K':13, 'Q':12, 'J':11, 'T':10}
+    b_1 = []
     for i in hand:
         #print (i)
-        a=i[1]
+        a_1 = i[1]
         #print(a)
-        if a in dict1.keys():
-            a=dict1[a]
+        if a_1 in dict1.keys():
+            a_1 = dict1[a_1]
         #print (a)
         #a=int(a)
-        b.append(a)
+        b_1.append(a_1)
     #print(b)
-    c=set(b)
-    d=len(c)
+    c_1 = set(b_1)
+    d_1 = len(c_1)
     #print (d)
-    if d==1:
+    if d_1 == 1:
         return True
-    else:
-        return False
+
+    return False
 
 def hand_rank(hand):
     '''
