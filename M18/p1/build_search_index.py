@@ -49,11 +49,11 @@ def build_search_index(docs):
 
     # initialize a search index (an empty dictionary)
     d_1 = {}
-    a_1 = [word_list(i) for i in docs]
+    a_1 = [word_list(i)]
     for c_1 in a_1:
         if c_1 not in d_1:
             for index, total in enumerate(a_1):
-                d_1[i] = [(index, total.count(i))]
+                d_1[c_1] = [(index, total.count(c_1))]
     return d_1
 
     # iterate through all the docs
@@ -64,7 +64,7 @@ def build_search_index(docs):
 
         # add or update the words of the doc to the search index
 
-    # return search index    
+    # return search index
 
 # helper function to print the search index
 # use this to verify how the search index looks
