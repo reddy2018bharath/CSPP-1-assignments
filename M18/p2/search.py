@@ -39,14 +39,14 @@ def search(search_index, query):
     '''
     pass
     query_1=query.lower()
-    query_1=query_1.split(" ")
+    query_2=query_1.split(" ")
     set_1=set()
-    for i in query_1:
+    for i in query_2:
         if i in search_index:
             index_1=search_index[i]
             for j in index_1:
                 set_1.add(j[0])
-    return set
+    return set_1
 
 def process_queries(search_index, queries):
     '''
