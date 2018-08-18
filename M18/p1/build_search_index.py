@@ -49,7 +49,7 @@ def build_search_index(docs):
 
     # initialize a search index (an empty dictionary)
     d_1 = {}
-    a_1 = [word_list(i) for i in docs]
+    a_1 = word_list(i) for i in docs
     for c_1 in a_1:
         if c_1 not in d_1:
             for index, total in enumerate(a_1):
