@@ -40,7 +40,7 @@ def word_list(text):
         return a list of words
     '''
     regex = re.compile('[^a-z]')
-    return [regex.sub("", w.strip()) for w in string.lower().split(" ")]
+    return [regex.sub("", w.strip()) for w in text.lower().split(" ")]
 
 def build_search_index(docs):
     '''
@@ -64,8 +64,7 @@ def build_search_index(docs):
 
         # add or update the words of the doc to the search index
 
-    # return search index
-    
+    # return search index    
 
 # helper function to print the search index
 # use this to verify how the search index looks
