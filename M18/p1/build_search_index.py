@@ -52,8 +52,8 @@ def build_search_index(docs):
     a = [word_list(i) for i in docs]
     for c in a:
         if c not in d:
-            for index, total in [enumerate(a)]
-            d[i] = [(index, total.count(i))]
+            for index, total in enumerate(a):
+                d[i] = [(index, total.count(i))]
     return d
 
     # iterate through all the docs
