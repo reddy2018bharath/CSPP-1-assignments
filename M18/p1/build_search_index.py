@@ -39,7 +39,6 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    pass
     regex = re.compile('[^a-z]')
     return [regex.sub("", w.strip()) for w in string.lower().split(" ")]
 
@@ -49,12 +48,12 @@ def build_search_index(docs):
     '''
 
     # initialize a search index (an empty dictionary)
-    d={}
-    a=[word_list(i) for i in docs]
+    d = {}
+    a = [word_list(i) for i in docs]
     for c in a:
         if c not in d:
             for index, total in [enumerate(a)]
-            d[i]=[(index, total.count(i))]
+            d[i] = [(index, total.count(i))]
     return d
 
     # iterate through all the docs
@@ -66,7 +65,7 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    pass
+    
 
 # helper function to print the search index
 # use this to verify how the search index looks
