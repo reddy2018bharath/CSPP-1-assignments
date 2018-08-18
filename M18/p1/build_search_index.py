@@ -31,14 +31,7 @@ def load_stopwords(filename):
         for line in f_stopwords:
             stopwords[line.strip()] = 0
     return stopwords
-def remove_stopwords(word, dict_1, stop_word, index):
-    '''function to remove stopwords'''
-    for w_1 in word:
-        if w_1 not in stop_word and len(w_1) > 0:
-            if w_1 not in dict_1.keys():
-                dict_1[w_1] = [(0, 0)]
-            dict_1[w_1][0][index] += 1
-    return dict_1
+
 
 def word_list(text):
     '''
@@ -56,10 +49,13 @@ def build_search_index(docs):
     '''
 
     # initialize a search index (an empty dictionary)
-    word_1 = word_list(text)
-    stop_word = load_stopwords("stopwords.txt")
-    word_freq = remove_stopwords(word_1, dict_1, stop_word, 0)
-    word_freq = remove_stopwords(word_2, dict_1, stop_word, 1)
+    d={}
+    a=[word_list(i) for i in docs]
+    for c in a:
+        if c not in d:
+            for index, total in [enumerate(a)]
+            d[i]=[(index, total.count(i))]
+    return d
 
     # iterate through all the docs
     # keep track of doc_id which is the list index corresponding the document
