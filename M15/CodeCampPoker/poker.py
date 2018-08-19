@@ -12,7 +12,7 @@ def kind(face_values, num):
 
 def get_facevalues(hand):
     """to find face values"""
-    return sorted(['--23456789TJQKA'.index(face) for face, suite in hand], reverse = True)
+    return sorted(['--23456789TJQKA'.index(face) for face, suite in hand], reverse=True)
 
 def is_straight(hand):
     '''
