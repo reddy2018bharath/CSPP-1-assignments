@@ -9,7 +9,6 @@ def kind(face_values, num):
     for face in face_values:
         if face_values.count(face) == num:
             return face
-    
 
 def get_facevalues(hand):
     """to find face values"""
