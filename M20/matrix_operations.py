@@ -18,6 +18,7 @@ def mult_matrix(m1, m2):
             result.append(resTemp)
         return result
     else:
+        print("shakalaka")
         print("Error: Matrix shapes invalid for mult")
         return None
 
