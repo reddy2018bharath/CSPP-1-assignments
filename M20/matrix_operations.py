@@ -18,7 +18,6 @@ def mult_matrix(m1, m2):
             result.append(resTemp)
         return result
     else:
-        print("shakalaka")
         print("Error: Matrix shapes invalid for mult")
         return None
 
@@ -83,8 +82,6 @@ def main():
     # add matrix 1 and matrix 2
 
     # multiply matrix 1 and matrix 2
-    mult_matrix(m1,m2)
-    pass
 
 if __name__ == '__main__':
     main()
