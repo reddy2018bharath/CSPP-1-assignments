@@ -15,7 +15,7 @@ def check_sudoku(sudoku):
     '''
     for i in sudoku:
         for k in i:
-            if not in "1 2 3 4 5 6 7 8 9":
+            if k not in "1 2 3 4 5 6 7 8 9":
                 return False
         return True
 def rows(sudoku):
