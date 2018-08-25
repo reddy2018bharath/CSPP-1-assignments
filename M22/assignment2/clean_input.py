@@ -9,6 +9,7 @@ def clean_string(string):
         for k in i:
             if k.isalpha():
                 str +=k
+    return str
 
 def main():
     string = input()
