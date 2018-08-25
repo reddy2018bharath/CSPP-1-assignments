@@ -14,8 +14,9 @@ def tokenize(string):
 
             
 def main():
-    matrix=list()
+    
     lines=int(input())
+    matrix=list()
     for i in range(lines):
 	    lst = [i for i in input().split(" ")]
     matrix.append(lst)
