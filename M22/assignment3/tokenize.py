@@ -4,11 +4,10 @@ each word
 '''
 
 def tokenize(string):
-    pass
     matrix=[]
     lines=int(input())
 	for i in range(lines):
-		lst =[(i) for i in input().split(" ")]
+	    lst =[(i) for i in input().split(" ")]
 	matrix.append(lst)
 	a_1=dict()
 	for i in matrix:
