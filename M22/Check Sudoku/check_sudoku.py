@@ -26,6 +26,7 @@ def rows(sudoku):
             c=c+1
     if c==9:
         return True
+    return False
 def columns(sudoku):
     transPose =[]
     for i in range(len(sudoku)):
