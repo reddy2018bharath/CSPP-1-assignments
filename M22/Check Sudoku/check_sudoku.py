@@ -29,11 +29,16 @@ def rows(sudoku):
 def columns(sudoku):
     transPose =[]
     for i in range(len(sudoku)):
-        row =[]
+        row=[]
         for j in range(len(sudoku[0])):
-	    row.append(sudoku[j][i])
+            row.append(sudoku[j][i])
+        #row =[]
+        #for j in range(len(sudoku[0])):
+	    #row.append(sudoku[j][i])
         transPose.append(row)
     return rows(transPose)
+#def grid(sudoku):
+    
 def result(sudoku):
     if check_sudoku(sudoku):
         if rows(sudoku):
