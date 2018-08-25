@@ -17,7 +17,7 @@ def main():
 	matrix=[]
     lines=int(input())
     for i in range(lines):
-	    lst =[(i) for i in input().split(" ")]
+	    lst =[i for i in input().split(" ")]
     matrix.append(lst)
 	print(tokenize(matrix))
 	
