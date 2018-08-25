@@ -14,12 +14,12 @@ def tokenize(string):
 
             
 def main():
-	matrix=list()
+    matrix=list()
     lines=int(input())
     for i in range(lines):
 	    lst = [i for i in input().split(" ")]
     matrix.append(lst)
-	print(tokenize(matrix))
+    print(tokenize(matrix))
 	
 
 
