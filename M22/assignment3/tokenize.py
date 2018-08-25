@@ -4,13 +4,8 @@ each word
 '''
 
 def tokenize(string):
-    matrix=[]
-    lines=int(input())
-    for i in range(lines):
-	    lst =[(i) for i in input().split(" ")]
-    matrix.append(lst)
     a_1=dict()
-    for i in matrix:
+    for i in string:
 	    if i not in a_1:
 		    a_1[i]=a_1.count(i)
 	    else:
@@ -19,7 +14,12 @@ def tokenize(string):
 
             
 def main():
-	print(tokenize(string))
+	matrix=[]
+    lines=int(input())
+    for i in range(lines):
+	    lst =[(i) for i in input().split(" ")]
+    matrix.append(lst)
+	print(tokenize(matrix))
 	
 
 
