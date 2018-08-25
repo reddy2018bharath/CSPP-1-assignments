@@ -6,6 +6,7 @@ def main():
     """to read the lines"""
     lines = int(input())
     for i in range(lines):
+        i = i
         print(input())
 
 if __name__ == '__main__':
