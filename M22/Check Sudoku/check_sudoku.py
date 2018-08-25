@@ -29,8 +29,8 @@ def rows(sudoku):
 def columns(sudoku):
     transPose =[]
     for i in range(len(sudoku)):
-	row =[]
-	for j in range(len(sudoku[0])):
+        row =[]
+        for j in range(len(sudoku[0])):
 	    row.append(sudoku[j][i])
 	transPose.append(row)
     return rows(transPose)
