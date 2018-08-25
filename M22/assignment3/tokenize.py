@@ -15,9 +15,11 @@ def tokenize(string):
 			a_1[i]=a_1.count(i)
 		else:
 			a_1[i]+=1
+	return a_1
 
             
 def main():
+	print(tokenize(string))
 	
 
 
