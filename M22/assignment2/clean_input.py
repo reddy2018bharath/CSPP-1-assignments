@@ -7,7 +7,7 @@ def clean_string(string):
     str=""
     for i in string:
         for k in i:
-            if k.isalpha():
+            if k.isalpha() or k.isnumeric():
                 str +=k
     return str
 
