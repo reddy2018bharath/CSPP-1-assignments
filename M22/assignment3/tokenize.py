@@ -6,7 +6,7 @@ each word
 def tokenize(string):
     matrix=[]
     lines=int(input())
-	for i in range(lines):
+	for i in range (lines):
 	    lst =[(i) for i in input().split(" ")]
 	matrix.append(lst)
 	a_1=dict()
