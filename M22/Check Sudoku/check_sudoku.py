@@ -32,7 +32,7 @@ def columns(sudoku):
         row =[]
         for j in range(len(sudoku[0])):
 	    row.append(sudoku[j][i])
-	transPose.append(row)
+        transPose.append(row)
     return rows(transPose)
 def result(sudoku):
     if check_sudoku(sudoku):
