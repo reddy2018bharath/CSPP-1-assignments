@@ -38,16 +38,19 @@ def columns(sudoku):
         transPose.append(row)
     return rows(transPose)
 def grid(sudoku):
-    bad_rows = [row for row in grid if not sudoku_ok(row)]
-    grid = list(zip(*grid))
-    bad_cols = [col for col in grid if not sudoku_ok(col)]
-    squares = []
+    squares=[]
     for i in range(9, step=3):
         for j in range(9, step=3):
           square = list(itertools.chain(row[j:j+3] for row in grid[i:i+3]))
           squares.append(square)
-    bad_squares = [square for square in squares if not sudoku_ok(square)]
-    return not (bad_rows or bad_cols or bad_squares)
+    c==0
+    for i in range(9):
+        if len(set(squares(i)))==9:
+            c=c+1
+    if c==9:
+        return True
+    return False
+    
     
 def result(sudoku):
     if check_sudoku(sudoku):
