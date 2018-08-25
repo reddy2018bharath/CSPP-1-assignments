@@ -4,14 +4,16 @@ alphabets in both upper and lower case and numbers.
 '''
 
 def clean_string(string):
-    str=""
+    """to remove special characters"""
+    str = ""
     for i in string:
         for k in i:
             if k.isalpha() or k.isnumeric():
-                str +=k
+                str += k
     return str
 
 def main():
+    """main function"""
     string = input()
     print(clean_string(string))
 
